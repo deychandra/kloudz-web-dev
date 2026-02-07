@@ -158,15 +158,12 @@ function Header() {
 
             {/* Desktop CTA Buttons */}
             <div className="hidden lg:flex items-center gap-3">
-              <Link to="/contact" className="btn-ghost">
-                Contact
-              </Link>
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Link to="/contact" className="btn-primary">
-                  Get Started
+                 Contact
                 </Link>
               </motion.div>
             </div>
@@ -268,15 +265,9 @@ function Header() {
               <div className="mt-auto space-y-3">
                 <Link
                   to="/contact"
-                  className="block w-full py-3 text-center text-sm font-semibold text-white border border-dark-500 rounded-lg hover:border-primary hover:bg-primary/10 transition-all"
-                >
-                  Contact Us
-                </Link>
-                <Link
-                  to="/contact"
                   className="block w-full py-3 text-center text-sm font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-all"
                 >
-                  Get Started
+                  Contact Us
                 </Link>
               </div>
 
