@@ -4,6 +4,7 @@ import Lenis from 'lenis';
 import Header from './Header';
 import Footer from './Footer';
 import ScrollProgress from '../common/ScrollProgress';
+import AnimatedCursor from '../common/AnimatedCursor';
 
 /**
  * Main layout wrapper with smooth scroll and page structure
@@ -50,7 +51,10 @@ function Layout({ children }) {
           }, [location.pathname]);
 
           return (
-                    <div className="relative min-h-screen bg-dark-900">
+                    <div className="relative min-h-screen bg-dark-900 cursor-none">
+                              {/* Custom Animated Cursor */}
+                              <AnimatedCursor />
+
                               {/* Scroll progress indicator */}
                               <ScrollProgress />
 
