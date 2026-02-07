@@ -14,8 +14,13 @@ import Go from "../../assets/images/icon/go.png";
 import SqlServer from "../../assets/images/icon/sqlserver.png";
 import Sass from "../../assets/images/icon/sass.png";
 import Gatsby from "../../assets/images/icon/gatsby.png";
+import React from "../../assets/images/icon/react.png";
+import Dotnet from "../../assets/images/icon/dotnet.png";
+import Mongodb from "../../assets/images/icon/mongodb.png";
 
-
+import Terraform from "../../assets/images/icon/terraform.png";
+import OpenAi from "../../assets/images/icon/open-ai.png";
+import MachineLearning from "../../assets/images/icon/machine-learning.png";
 
 /**
  * Technology Stack Section
@@ -143,6 +148,58 @@ function TechStack() {
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
+                  src={OpenAi}
+                  alt="OpenAI"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <p className="mt-2.5 text-sm">Open AI</p>
+            </div>
+          </div>
+
+          <div className="row-start-3 col-start-2 col-end-2">
+            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+              <div className="h-[50px] w-[80px]">
+                <img
+                  src={Azure}
+                  alt="Azure"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <p className="mt-2.5 text-sm">Azure</p>
+            </div>
+          </div>
+
+          <div className="row-start-3 col-start-8 col-end-8">
+            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+              <div className="h-[50px] w-[80px]">
+                <img
+                  src={Next}
+                  alt="Next.js"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <p className="mt-2.5 text-sm">Next.js</p>
+            </div>
+          </div>
+
+          <div className="row-start-3 col-start-9 col-end-9">
+            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+              <div className="h-[50px] w-[80px]">
+                <img
+                  src={Shopify}
+                  alt="Shopify"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <p className="mt-2.5 text-sm">Shopify</p>
+            </div>
+          </div>
+
+          <div className="row-start-4 col-start-1 col-end-1">
+            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+              <div className="h-[50px] w-[80px]">
+                <img
                   src={Angular}
                   alt="Angular"
                   className="w-full h-full object-contain"
@@ -152,7 +209,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-2 col-end-2">
+          <div className="row-start-4 col-start-2 col-end-2">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -165,7 +222,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-3 col-end-3">
+          <div className="row-start-4 col-start-3 col-end-3">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -178,7 +235,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-7 col-end-7">
+          <div className="row-start-4 col-start-7 col-end-7">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -191,7 +248,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-8 col-end-8">
+          <div className="row-start-4 col-start-8 col-end-8">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -204,7 +261,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-9 col-end-9">
+          <div className="row-start-4 col-start-9 col-end-9">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -217,7 +274,20 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-2 col-end-2">
+          <div className="row-start-5 col-start-2 col-end-2">
+            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+              <div className="h-[50px] w-[80px]">
+                <img
+                  src={React}
+                  alt="React"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <p className="mt-2.5 text-sm">React</p>
+            </div>
+          </div>
+
+          <div className="row-start-5 col-start-3 col-end-3">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -230,68 +300,55 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-3 col-end-3">
+          <div className="row-start-5 col-start-4 col-end-4">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Kotlin}
-                  alt="Kotlin"
+                  src={Dotnet}
+                  alt="Dotnet"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Kotlin</p>
+              <p className="mt-2.5 text-sm">Dotnet</p>
             </div>
           </div>
 
-          <div className="row-start-4 col-start-4 col-end-4">
+          <div className="row-start-5 col-start-6 col-end-6">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Kotlin}
-                  alt="Kotlin"
+                  src={Mongodb}
+                  alt="Mongodb"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Kotlin</p>
+              <p className="mt-2.5 text-sm">Mongodb</p>
             </div>
           </div>
 
-          <div className="row-start-4 col-start-6 col-end-6">
+          <div className="row-start-5 col-start-7 col-end-7">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Kotlin}
-                  alt="Kotlin"
+                  src={Terraform}
+                  alt="Terraform"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Kotlin</p>
+              <p className="mt-2.5 text-sm">Terraform</p>
             </div>
           </div>
 
-          <div className="row-start-4 col-start-7 col-end-7">
+          <div className="row-start-5 col-start-8 col-end-8">
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Kotlin}
-                  alt="Kotlin"
+                  src={MachineLearning}
+                  alt="Machine Learning"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Kotlin</p>
-            </div>
-          </div>
-
-          <div className="row-start-4 col-start-8 col-end-8">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
-              <div className="h-[50px] w-[80px]">
-                <img
-                  src={Kotlin}
-                  alt="Kotlin"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <p className="mt-2.5 text-sm">Kotlin</p>
+              <p className="mt-2.5 text-sm">Machine Learning</p>
             </div>
           </div>
         </div>
