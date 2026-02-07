@@ -14,7 +14,7 @@ const blogPosts = [
                     category: 'Engineering',
                     date: 'Jan 15, 2026',
                     readTime: '8 min read',
-                    image: null,
+                    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
                     featured: true,
           },
           {
@@ -24,7 +24,7 @@ const blogPosts = [
                     category: 'Hiring',
                     date: 'Jan 10, 2026',
                     readTime: '12 min read',
-                    image: null,
+                    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
                     featured: true,
           },
           {
@@ -34,7 +34,7 @@ const blogPosts = [
                     category: 'AI & Automation',
                     date: 'Jan 5, 2026',
                     readTime: '6 min read',
-                    image: null,
+                    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
                     featured: false,
           },
           {
@@ -44,7 +44,7 @@ const blogPosts = [
                     category: 'DevOps',
                     date: 'Dec 28, 2025',
                     readTime: '10 min read',
-                    image: null,
+                    image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&q=80',
                     featured: false,
           },
 ];
@@ -332,30 +332,44 @@ function Blog() {
                                                                                 custom={index}
                                                                                 className="glass-card overflow-hidden group hover:border-primary/30 transition-all duration-500"
                                                                       >
-                                                                                {/* Image placeholder with gradient */}
-                                                                                <div className="h-56 relative overflow-hidden">
-                                                                                          <div className="absolute inset-0 bg-gradient-to-br from-dark-700 via-dark-800 to-dark-900" />
-                                                                                          <motion.div
-                                                                                                    className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent-purple/10 to-accent-cyan/20"
+                                                                                {/* Image with actual photo */}
+                                                                      <div className="h-56 relative overflow-hidden">
+                                                                                {post.image ? (
+                                                                                          <motion.img
+                                                                                                    src={post.image}
+                                                                                                    alt={post.title}
+                                                                                                    className="absolute inset-0 w-full h-full object-cover"
                                                                                                     whileHover={{ scale: 1.1 }}
                                                                                                     transition={{ duration: 0.6 }}
                                                                                           />
-                                                                                          <div className="absolute inset-0 flex items-center justify-center">
-                                                                                                    <motion.span
-                                                                                                              className="text-8xl font-display font-bold text-white/5"
-                                                                                                              whileHover={{ scale: 1.2, rotate: -5 }}
-                                                                                                              transition={{ duration: 0.3 }}
-                                                                                                    >
-                                                                                                              {post.title.charAt(0)}
-                                                                                                    </motion.span>
-                                                                                          </div>
-                                                                                          {/* Category badge on image */}
-                                                                                          <div className="absolute top-4 left-4">
-                                                                                                    <span className={`px-3 py-1 text-xs font-semibold rounded-full backdrop-blur-md ${categoryColors[post.category]}`}>
-                                                                                                              {post.category}
-                                                                                                    </span>
-                                                                                          </div>
+                                                                                ) : (
+                                                                                          <>
+                                                                                                    <div className="absolute inset-0 bg-gradient-to-br from-dark-700 via-dark-800 to-dark-900" />
+                                                                                                    <motion.div
+                                                                                                              className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent-purple/10 to-accent-cyan/20"
+                                                                                                              whileHover={{ scale: 1.1 }}
+                                                                                                              transition={{ duration: 0.6 }}
+                                                                                                    />
+                                                                                                    <div className="absolute inset-0 flex items-center justify-center">
+                                                                                                              <motion.span
+                                                                                                                        className="text-8xl font-display font-bold text-white/5"
+                                                                                                                        whileHover={{ scale: 1.2, rotate: -5 }}
+                                                                                                                        transition={{ duration: 0.3 }}
+                                                                                                              >
+                                                                                                                        {post.title.charAt(0)}
+                                                                                                              </motion.span>
+                                                                                                    </div>
+                                                                                          </>
+                                                                                )}
+                                                                                {/* Category badge on image */}
+                                                                                <div className="absolute top-4 left-4">
+                                                                                          <span className={`px-3 py-1 text-xs font-semibold rounded-full backdrop-blur-md ${categoryColors[post.category]}`}>
+                                                                                                    {post.category}
+                                                                                          </span>
                                                                                 </div>
+                                                                                {/* Overlay gradient */}
+                                                                                <div className="absolute inset-0 bg-gradient-to-t from-dark-900/60 via-transparent to-transparent" />
+                                                                      </div>
 
                                                                                 {/* Content */}
                                                                                 <div className="p-6">

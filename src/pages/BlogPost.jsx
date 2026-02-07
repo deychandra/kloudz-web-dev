@@ -13,6 +13,7 @@ const blogPostsData = {
                     readTime: '8 min read',
                     author: 'Rajesh Kumar',
                     authorRole: 'CTO',
+                    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
                     content: `
 ## Introduction
 
@@ -70,6 +71,7 @@ Building a scalable SaaS platform requires careful planning and continuous itera
                     readTime: '12 min read',
                     author: 'Priya Sharma',
                     authorRole: 'VP Engineering',
+                    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80',
                     content: `
 ## Introduction
 
@@ -133,6 +135,7 @@ Building a successful remote team requires intentionality and the right processe
                     readTime: '6 min read',
                     author: 'Amit Patel',
                     authorRole: 'VP Engineering',
+                    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
                     content: `
 ## The State of AI in 2026
 
@@ -200,6 +203,7 @@ AI in 2026 is practical, accessible, and essential. Start with clear business pr
                     readTime: '10 min read',
                     author: 'Rajesh Kumar',
                     authorRole: 'CTO',
+                    image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&q=80',
                     content: `
 ## Why DevOps Matters for Startups
 
@@ -308,7 +312,7 @@ function BlogPost() {
                                                             variants={fadeUp}
                                                             initial="hidden"
                                                             animate="show"
-                                                            className="max-w-3xl mx-auto"
+                                                         
                                                   >
                                                             {/* Back link */}
                                                             <Link
@@ -347,7 +351,7 @@ function BlogPost() {
                                                             </p>
 
                                                             {/* Author */}
-                                                            <div className="flex items-center gap-4">
+                                                            <div className="flex items-center gap-4 mb-8">
                                                                       <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent-purple flex items-center justify-center text-white font-bold">
                                                                                 {post.author.split(' ').map(n => n[0]).join('')}
                                                                       </div>
@@ -356,6 +360,23 @@ function BlogPost() {
                                                                                 <div className="text-sm text-gray-500">{post.authorRole}</div>
                                                                       </div>
                                                             </div>
+
+                                                            {/* Featured Image */}
+                                                            {post.image && (
+                                                                      <motion.div
+                                                                                variants={fadeUp}
+                                                                                initial="hidden"
+                                                                                animate="show"
+                                                                                className="relative rounded-2xl overflow-hidden aspect-video"
+                                                                      >
+                                                                                <img
+                                                                                          src={post.image}
+                                                                                          alt={post.title}
+                                                                                          className="w-full h-full object-cover"
+                                                                                />
+                                                                                <div className="absolute inset-0 bg-gradient-to-t from-dark-900/20 via-transparent to-transparent" />
+                                                                      </motion.div>
+                                                            )}
                                                   </motion.div>
                                         </div>
                               </section>
@@ -363,7 +384,7 @@ function BlogPost() {
                               {/* Content */}
                               <section className="section-padding pt-12">
                                         <div className="container-wide">
-                                                  <div className="max-w-3xl mx-auto">
+                                                  <div>
                                                             <motion.article
                                                                       variants={fadeUp}
                                                                       initial="hidden"
