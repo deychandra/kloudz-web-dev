@@ -37,11 +37,22 @@ const timeline = [
           },
 ];
 
-const pricing = [
-          { level: 'Junior', rate: '$3,500 - $4,500/month' },
-          { level: 'Mid-Level', rate: '$5,000 - $6,500/month' },
-          { level: 'Senior', rate: '$7,000 - $9,000/month' },
-          { level: 'Lead/Architect', rate: '$9,500 - $12,000/month' },
+const investmentHighlights = [
+          {
+                    title: 'All‑Inclusive Team',
+                    description: 'Engineering, PM, and ops support bundled into one predictable engagement.',
+                    icon: FiUsers,
+          },
+          {
+                    title: 'Fast Team Assembly',
+                    description: 'Role definition, vetting, and onboarding handled end‑to‑end.',
+                    icon: FiClock,
+          },
+          {
+                    title: 'Quality Guardrails',
+                    description: 'Proven hiring pipeline, performance tracking, and senior oversight.',
+                    icon: FiAward,
+          },
 ];
 
 const includes = [
@@ -257,39 +268,86 @@ function DedicatedDevelopers() {
                                         </div>
                               </section>
 
-                              {/* Pricing */}
+                              {/* Investment */}
                               <section className="section-padding bg-dark-800/30">
                                         <div className="container-wide">
                                                   <SectionHeading
                                                             tag="Investment"
-                                                            title="Monthly Rates"
-                                                            description="Fixed monthly rate per developer, all-inclusive."
+                                                            title="Engagement Value"
+                                                            description="A premium, fully managed team model built for long‑term impact."
                                                             className="mb-12"
                                                   />
 
-                                                  <div className="max-w-3xl mx-auto">
-                                                            <div className="glass-card p-8">
-                                                                      <div className="grid gap-4 mb-8">
-                                                                                {pricing.map((item, index) => (
-                                                                                          <div
-                                                                                                    key={item.level}
-                                                                                                    className={`flex justify-between items-center py-4 ${index < pricing.length - 1 ? 'border-b border-dark-600' : ''}`}
+                                                  <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+                                                            <motion.div
+                                                                      variants={staggerContainer}
+                                                                      initial="hidden"
+                                                                      whileInView="show"
+                                                                      viewport={{ once: true }}
+                                                                      className="grid gap-4"
+                                                            >
+                                                                      {investmentHighlights.map((item, index) => {
+                                                                                const Icon = item.icon;
+                                                                                return (
+                                                                                          <motion.div
+                                                                                                    key={item.title}
+                                                                                                    variants={fadeUp}
+                                                                                                    custom={index}
+                                                                                                    className="glass-card p-6 flex items-start gap-4 hover:border-primary/30 transition-colors"
                                                                                           >
-                                                                                                    <span className="text-gray-300 font-medium">{item.level}</span>
-                                                                                                    <span className="text-primary font-bold text-lg">{item.rate}</span>
-                                                                                          </div>
-                                                                                ))}
-                                                                      </div>
+                                                                                                    <div className="h-12 w-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
+                                                                                                              <Icon className="h-6 w-6" />
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                              <h4 className="text-lg font-semibold text-white mb-1">
+                                                                                                                        {item.title}
+                                                                                                              </h4>
+                                                                                                              <p className="text-sm text-gray-400">
+                                                                                                                        {item.description}
+                                                                                                              </p>
+                                                                                                    </div>
+                                                                                          </motion.div>
+                                                                                );
+                                                                      })}
+                                                            </motion.div>
 
-                                                                      <div className="border-t border-dark-600 pt-6">
-                                                                                <h4 className="text-white font-semibold mb-4">Includes:</h4>
-                                                                                <div className="flex flex-wrap gap-2">
+                                                            <div className="glass-card p-8 relative overflow-hidden">
+                                                                      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.45),transparent_60%)]" />
+                                                                      <div className="relative">
+                                                                                <p className="text-xs uppercase tracking-[0.35em] text-gray-500 mb-4">
+                                                                                          What You Get
+                                                                                </p>
+                                                                                <h3 className="text-2xl font-semibold text-white mb-5">
+                                                                                          A dedicated team that ships consistently.
+                                                                                </h3>
+                                                                                <div className="flex flex-wrap gap-2 mb-6">
                                                                                           {includes.map((item) => (
-                                                                                                    <span key={item} className="px-3 py-1 text-xs text-gray-300 bg-dark-700 rounded-full flex items-center gap-1">
+                                                                                                    <span
+                                                                                                              key={item}
+                                                                                                              className="px-3 py-1 text-xs text-gray-300 bg-dark-700/70 rounded-full flex items-center gap-1"
+                                                                                                    >
                                                                                                               <FiCheck className="text-green-500" />
                                                                                                               {item}
                                                                                                     </span>
                                                                                           ))}
+                                                                                </div>
+                                                                                <div className="grid grid-cols-2 gap-4">
+                                                                                          <div className="glass-card p-4">
+                                                                                                    <p className="text-xs text-gray-500">Avg. Ramp‑Up</p>
+                                                                                                    <p className="text-2xl font-semibold text-white">3–4 weeks</p>
+                                                                                          </div>
+                                                                                          <div className="glass-card p-4">
+                                                                                                    <p className="text-xs text-gray-500">Retention</p>
+                                                                                                    <p className="text-2xl font-semibold text-white">95%+</p>
+                                                                                          </div>
+                                                                                          <div className="glass-card p-4">
+                                                                                                    <p className="text-xs text-gray-500">Engagement Length</p>
+                                                                                                    <p className="text-2xl font-semibold text-white">12+ months</p>
+                                                                                          </div>
+                                                                                          <div className="glass-card p-4">
+                                                                                                    <p className="text-xs text-gray-500">Reporting Cadence</p>
+                                                                                                    <p className="text-2xl font-semibold text-white">Weekly</p>
+                                                                                          </div>
                                                                                 </div>
                                                                       </div>
                                                             </div>
