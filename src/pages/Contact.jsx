@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FiMail, FiPhone, FiMapPin, FiSend, FiCheck, FiArrowRight } from 'react-icons/fi';
 import { pageTransition, staggerContainer, fadeUp, slideInLeft, slideInRight } from '../utils/animations';
 import CinematicHero from '../components/sections/CinematicHero';
+import SEO from '../components/common/SEO';
 
 const contactInfo = [
           {
@@ -85,6 +86,13 @@ function Contact() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Contact Us - Get a Free Project Quote"
+                                        description="Contact Kloudz Computing for software development, IT staffing, or AI automation services. Get a free consultation and project quote within 24 hours."
+                                        keywords="contact software development company, hire developers, IT services quote, software development inquiry, offshore development contact"
+                                        canonical="https://kloudz.com/contact"
+                              />
+
                               {/* Cinematic Hero Section */}
                               <CinematicHero
                                         tag="Get in Touch"

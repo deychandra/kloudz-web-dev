@@ -80,6 +80,13 @@ function DedicatedDevelopers() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Dedicated Development Teams - Full-Time Remote Engineers"
+                                        description="Build your dedicated development team with full-time remote engineers. 50% cost savings vs in-house hires. Frontend, backend, mobile, DevOps specialists."
+                                        keywords="dedicated development team, hire dedicated developers, offshore development team, full-time remote developers, extended development team"
+                                        canonical="https://kloudz.com/hiring/dedicated-developers"
+                              />
+
                               {/* Hero Section */}
                               <section className="pt-32 pb-20 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />

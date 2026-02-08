@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { pageTransition, staggerContainer, fadeUp } from '../utils/animations';
+import SEO from '../components/common/SEO';
 
 const sections = [
           {
@@ -90,6 +91,13 @@ function Terms() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Terms of Service - Legal Agreement & Conditions"
+                                        description="Kloudz Computing Terms of Service. Read our legal agreement covering service usage, intellectual property, payment terms, and liability provisions."
+                                        keywords="terms of service, legal agreement, terms and conditions, service agreement, intellectual property, payment terms"
+                                        canonical="https://kloudz.com/terms"
+                              />
+
                               {/* Hero */}
                               <section className="pt-32 pb-12 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />

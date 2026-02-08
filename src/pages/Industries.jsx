@@ -4,6 +4,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import { pageTransition, staggerContainer, fadeUp } from '../utils/animations';
 import CinematicHero from '../components/sections/CinematicHero';
 import CTA from '../components/sections/CTA';
+import SEO from '../components/common/SEO';
 
 const industries = [
           {
@@ -70,6 +71,13 @@ function Industries() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Industries We Serve - FinTech, HealthTech, E-Commerce, SaaS"
+                                        description="Kloudz Computing serves diverse industries including FinTech, HealthTech, E-Commerce, EdTech, SaaS, and Logistics. 185+ successful projects delivered across sectors."
+                                        keywords="fintech software development, healthtech solutions, ecommerce development, edtech platforms, saas development, logistics software, industry expertise"
+                                        canonical="https://kloudz.com/industries"
+                              />
+
                               {/* Cinematic Hero Section */}
                               <CinematicHero
                                         tag="Expertise"

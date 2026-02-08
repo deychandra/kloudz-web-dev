@@ -5,6 +5,7 @@ import { pageTransition, staggerContainer, fadeUp } from '../utils/animations';
 import SectionHeading from '../components/ui/SectionHeading';
 import CinematicHero from '../components/sections/CinematicHero';
 import CTA from '../components/sections/CTA';
+import SEO from '../components/common/SEO';
 
 const caseStudies = [
           {
@@ -85,6 +86,13 @@ function CaseStudies() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Case Studies - Software Development Success Stories"
+                                        description="Explore how Kloudz Computing helped startups and enterprises build scalable products. Fintech, e-commerce, healthcare, and SaaS success stories with real metrics."
+                                        keywords="software development case studies, IT services portfolio, fintech platform development, e-commerce modernization, healthcare app development, SaaS development"
+                                        canonical="https://kloudz.com/case-studies"
+                              />
+
                               {/* Cinematic Hero Section */}
                               <CinematicHero
                                         tag="Our Work"

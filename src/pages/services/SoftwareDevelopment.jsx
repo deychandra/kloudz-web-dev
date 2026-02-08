@@ -4,6 +4,7 @@ import { FiArrowRight, FiMonitor, FiSmartphone, FiLayers, FiServer, FiCheck, FiC
 import { pageTransition, staggerContainer, fadeUp, slideInLeft, slideInRight } from '../../utils/animations';
 import SectionHeading from '../../components/ui/SectionHeading';
 import CTA from '../../components/sections/CTA';
+import SEO from '../../components/common/SEO';
 
 const services = [
           {
@@ -98,6 +99,13 @@ function SoftwareDevelopment() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Custom Software Development Services - Web, Mobile & SaaS"
+                                        description="Hire expert software developers for custom web applications, mobile apps, SaaS platforms, and enterprise software. React, Node.js, Python, cloud-native solutions."
+                                        keywords="custom software development, web application development, mobile app development, SaaS development, enterprise software, React development, Node.js development"
+                                        canonical="https://kloudz.com/services/software-development"
+                              />
+
                               {/* Hero Section */}
                               <section className="pt-32 pb-20 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />

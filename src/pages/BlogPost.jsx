@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useParams, Link } from 'react-router-dom';
 import { FiArrowLeft, FiClock, FiCalendar, FiShare2, FiTwitter, FiLinkedin } from 'react-icons/fi';
 import { pageTransition, fadeUp } from '../utils/animations';
+import SEO from '../components/common/SEO';
 
 // Blog post data
 const blogPostsData = {
@@ -302,6 +303,13 @@ function BlogPost() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title={post ? `${post.title} | Kloudz Blog` : 'Blog Post'}
+                                        description={post ? post.excerpt : 'Read expert insights on software development and engineering.'}
+                                        keywords={post ? `${post.category.toLowerCase()}, software development, engineering blog, ${post.title.toLowerCase()}` : 'software development blog'}
+                                        canonical={`https://kloudz.com/blog/${slug}`}
+                              />
+
                               {/* Hero */}
                               <section className="pt-32 pb-12 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />

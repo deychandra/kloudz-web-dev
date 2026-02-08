@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { pageTransition, staggerContainer, fadeUp } from '../utils/animations';
+import SEO from '../components/common/SEO';
 
 const sections = [
           {
@@ -73,6 +74,13 @@ function Privacy() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Privacy Policy - Data Protection & Privacy Practices"
+                                        description="Kloudz Computing Privacy Policy. Learn how we collect, use, and protect your personal information when you use our website and services."
+                                        keywords="privacy policy, data protection, personal information, cookie policy, GDPR compliance"
+                                        canonical="https://kloudz.com/privacy"
+                              />
+
                               {/* Hero */}
                               <section className="pt-32 pb-12 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />

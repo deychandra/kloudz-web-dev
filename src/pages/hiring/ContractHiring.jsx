@@ -4,6 +4,7 @@ import { FiArrowRight, FiCheck, FiCalendar, FiUsers, FiFileText, FiShield, FiDol
 import { pageTransition, staggerContainer, fadeUp } from '../../utils/animations';
 import SectionHeading from '../../components/ui/SectionHeading';
 import CTA from '../../components/sections/CTA';
+import SEO from '../../components/common/SEO';
 
 const processSteps = [
           {
@@ -89,6 +90,13 @@ function ContractHiring() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Contract Hiring - Flexible IT Staffing Solutions"
+                                        description="Hire pre-vetted developers on flexible contracts. Staff augmentation, dedicated developers, or build-operate-transfer models. 50% cost savings, 2-week hiring timeline."
+                                        keywords="contract hiring, IT staffing, staff augmentation, hire developers, offshore developers, contract developers, temporary staffing"
+                                        canonical="https://kloudz.com/hiring/contract-hiring"
+                              />
+
                               {/* Hero Section */}
                               <section className="pt-32 pb-20 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />

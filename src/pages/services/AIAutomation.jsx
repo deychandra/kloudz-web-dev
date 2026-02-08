@@ -4,6 +4,7 @@ import { FiArrowRight, FiCpu, FiMessageSquare, FiZap, FiDatabase, FiBarChart2, F
 import { pageTransition, staggerContainer, fadeUp } from '../../utils/animations';
 import SectionHeading from '../../components/ui/SectionHeading';
 import CTA from '../../components/sections/CTA';
+import SEO from '../../components/common/SEO';
 
 const services = [
           {
@@ -54,6 +55,13 @@ function AIAutomation() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="AI & Automation Services - Custom AI Solutions & Process Automation"
+                                        description="Leverage AI and machine learning to automate workflows and build intelligent products. Custom AI solutions, chatbots, RPA, and OpenAI GPT integration."
+                                        keywords="AI automation services, custom AI solutions, chatbot development, RPA automation, OpenAI GPT integration, machine learning services, NLP solutions"
+                                        canonical="https://kloudz.com/services/ai-automation"
+                              />
+
                               {/* Hero Section */}
                               <section className="pt-32 pb-20 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />

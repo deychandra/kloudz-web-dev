@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiHome, FiArrowRight } from 'react-icons/fi';
 import { pageTransition, fadeUp } from '../utils/animations';
+import SEO from '../components/common/SEO';
 
 function NotFound() {
           return (
@@ -12,6 +13,12 @@ function NotFound() {
                               variants={pageTransition}
                               className="min-h-screen flex items-center justify-center relative overflow-hidden"
                     >
+                              <SEO
+                                        title="404 - Page Not Found"
+                                        description="The page you're looking for doesn't exist. Return to Kloudz Computing homepage or contact our support team for assistance."
+                                        noindex={true}
+                              />
+
                               {/* Background */}
                               <div className="absolute inset-0 hero-animated-bg" />
                               <div className="absolute inset-0 grid-pattern opacity-20" />

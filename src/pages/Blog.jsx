@@ -5,6 +5,7 @@ import { FiArrowRight, FiClock, FiCalendar, FiMail, FiCheck } from 'react-icons/
 import { gsap } from 'gsap';
 import { pageTransition, staggerContainer, fadeUp } from '../utils/animations';
 import SectionHeading from '../components/ui/SectionHeading';
+import SEO from '../components/common/SEO';
 
 const blogPosts = [
           {
@@ -211,6 +212,13 @@ function Blog() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Blog - Software Development & Engineering Insights"
+                                        description="Read expert insights on software development, engineering management, AI automation, and hiring remote developers. Stay updated with the latest technology trends."
+                                        keywords="software development blog, engineering insights, hiring developers, AI automation blog, DevOps best practices, technology blog"
+                                        canonical="https://kloudz.com/blog"
+                              />
+
                               {/* Cinematic Hero Section */}
                               <section ref={heroRef} className="relative min-h-[70vh] flex items-center overflow-hidden">
                                         {/* Multi-layer background */}

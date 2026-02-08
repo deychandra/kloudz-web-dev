@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { pageTransition } from '../utils/animations';
+import SEO from '../components/common/SEO';
 
 // Import all home page sections
 import Hero from '../components/sections/Hero';
@@ -21,6 +22,13 @@ function Home() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Kloudz Computing - Software Development & IT Staffing Services"
+                                        description="Hire dedicated developers and build world-class software with Kloudz Computing. We help startups and enterprises with custom software development, AI automation, and cloud DevOps solutions."
+                                        keywords="software development company, hire dedicated developers, IT staffing services, custom software development, AI automation services, cloud DevOps, offshore development team"
+                                        canonical="https://kloudz.com"
+                              />
+
                               {/* Cinematic Hero Section */}
                               <Hero />
 

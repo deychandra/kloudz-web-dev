@@ -4,6 +4,7 @@ import { FiArrowRight, FiCloud, FiServer, FiGitBranch, FiBox, FiActivity, FiShie
 import { pageTransition, staggerContainer, fadeUp } from '../../utils/animations';
 import SectionHeading from '../../components/ui/SectionHeading';
 import CTA from '../../components/sections/CTA';
+import SEO from '../../components/common/SEO';
 
 const services = [
           {
@@ -58,6 +59,13 @@ function CloudDevOps() {
                               exit="exit"
                               variants={pageTransition}
                     >
+                              <SEO
+                                        title="Cloud & DevOps Services - AWS, Azure, GCP, Kubernetes, CI/CD"
+                                        description="Expert cloud architecture, DevOps automation, and infrastructure services. Cloud migration, Kubernetes, CI/CD pipelines, Infrastructure as Code, and 24/7 monitoring."
+                                        keywords="cloud DevOps services, AWS consulting, Kubernetes deployment, CI/CD pipelines, Infrastructure as Code, cloud migration, Terraform, Docker"
+                                        canonical="https://kloudz.com/services/cloud-devops"
+                              />
+
                               {/* Hero Section */}
                               <section className="pt-32 pb-20 relative overflow-hidden">
                                         <div className="absolute inset-0 hero-animated-bg" />
