@@ -16,10 +16,8 @@ export const SITE_CONFIG = {
           ],
           founded: 2014,
           social: {
-                    linkedin: 'https://linkedin.com/company/kloudzcomputing',
-                    twitter: 'https://twitter.com/kloudzcomputing',
-                    github: 'https://github.com/kloudzcomputing',
-                    facebook: 'https://facebook.com/kloudzcomputing',
+                    linkedin: 'https://www.linkedin.com/company/kloudz-computing/',
+                    facebook: 'https://www.facebook.com/KloudzComputing',
           },
 };
 

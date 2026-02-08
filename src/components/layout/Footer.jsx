@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiLinkedin, FiTwitter, FiGithub, FiFacebook, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FiLinkedin, FiFacebook, FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 import { SITE_CONFIG, FOOTER_LINKS } from '../../utils/constants';
 import { staggerContainer, fadeUp } from '../../utils/animations';
 import Logo from "../../assets/images/kloudz-logo.svg";
@@ -12,8 +12,6 @@ function Footer() {
 
           const socialLinks = [
                     { icon: FiLinkedin, href: SITE_CONFIG.social.linkedin, label: 'LinkedIn' },
-                    { icon: FiTwitter, href: SITE_CONFIG.social.twitter, label: 'Twitter' },
-                    { icon: FiGithub, href: SITE_CONFIG.social.github, label: 'GitHub' },
                     { icon: FiFacebook, href: SITE_CONFIG.social.facebook, label: 'Facebook' },
           ];
 
