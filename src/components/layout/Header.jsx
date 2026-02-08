@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineMenuAlt4, HiX, HiChevronDown } from "react-icons/hi";
 import { FiCode, FiCloud, FiCpu, FiUsers, FiUserCheck } from "react-icons/fi";
+import { Phone } from "lucide-react";
 import { NAV_LINKS, SITE_CONFIG } from "../../utils/constants";
 import Logo from "../../assets/images/kloudz-logo.svg";
 
@@ -162,8 +163,15 @@ function Header() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Link to="/contact" className="btn-primary">
-                 Contact
+                <Link
+                  to="/contact"
+                  className="group relative inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-white/15 bg-dark-800/60 text-white text-sm font-semibold shadow-[0_10px_30px_rgba(0,0,0,0.25)] transition-all hover:border-primary/50 hover:shadow-[0_12px_40px_rgba(99,102,241,0.25)]"
+                >
+                  <span className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/10 via-accent-cyan/10 to-accent-purple/10 opacity-0 transition-opacity group-hover:opacity-100" />
+                  <span className="relative h-8 w-8 rounded-full bg-primary/15 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Phone className="h-4 w-4" />
+                  </span>
+                  <span className="relative">Contact</span>
                 </Link>
               </motion.div>
             </div>
@@ -265,9 +273,14 @@ function Header() {
               <div className="mt-auto space-y-3">
                 <Link
                   to="/contact"
-                  className="block w-full py-3 text-center text-sm font-semibold text-white bg-primary rounded-lg hover:bg-primary-dark transition-all"
+                  className="block w-full py-3 text-center text-sm font-semibold text-white rounded-full border border-white/15 bg-dark-800/70 hover:border-primary/40 hover:bg-dark-700/70 transition-all"
                 >
-                  Contact Us
+                  <span className="inline-flex items-center gap-3">
+                    <span className="h-7 w-7 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+                      <Phone className="h-4 w-4" />
+                    </span>
+                    Contact Us
+                  </span>
                 </Link>
               </div>
 
