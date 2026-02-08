@@ -18,10 +18,16 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-dark-900 text-white font-sans;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
     overflow-x: hidden;
   }
 
