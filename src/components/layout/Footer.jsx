@@ -146,7 +146,13 @@ function Footer() {
                                                                                 </li>
                                                                                 <li className="flex items-start gap-3 text-sm text-gray-400">
                                                                                           <FiMapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                                                                                          <span>{SITE_CONFIG.address}</span>
+                                                                                          <div className="space-y-2">
+                                                                                                    {SITE_CONFIG.address.map((addr) => (
+                                                                                                              <span key={addr} className="block">
+                                                                                                                        {addr}
+                                                                                                              </span>
+                                                                                                    ))}
+                                                                                          </div>
                                                                                 </li>
                                                                       </ul>
                                                             </motion.div>

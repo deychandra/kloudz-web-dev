@@ -50,7 +50,7 @@ const sections = [
     • Object to processing of your data
     • Data portability
     
-    To exercise these rights, please contact us at privacy@kloudz.com.`,
+    To exercise these rights, please contact us at s.roy@kloudzcomputing.tech.`,
           },
           {
                     title: '8. Changes to This Policy',
@@ -61,8 +61,8 @@ const sections = [
                     content: `If you have any questions about this Privacy Policy, please contact us at:
     
     Kloudz Computing
-    Email: privacy@kloudz.com
-    Phone: +1 (888) 555-0123`,
+    Email: s.roy@kloudzcomputing.tech
+    Phone: +91 90466 84235`,
           },
 ];
 

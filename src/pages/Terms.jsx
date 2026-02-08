@@ -78,8 +78,8 @@ const sections = [
                     content: `For questions about these Terms of Service, please contact:
     
     Kloudz Computing
-    Email: legal@kloudz.com
-    Phone: +1 (888) 555-0123`,
+    Email: s.roy@kloudzcomputing.tech
+    Phone: +91 90466 84235`,
           },
 ];
 

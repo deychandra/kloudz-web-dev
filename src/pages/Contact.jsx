@@ -9,19 +9,25 @@ const contactInfo = [
           {
                     icon: FiMail,
                     label: 'Email',
-                    value: 'hello@kloudz.com',
-                    href: 'mailto:hello@kloudz.com',
+                    value: 's.roy@kloudzcomputing.tech',
+                    href: 'mailto:s.roy@kloudzcomputing.tech',
           },
           {
                     icon: FiPhone,
                     label: 'Phone',
-                    value: '+1 (888) 555-0123',
-                    href: 'tel:+18885550123',
+                    value: '+91 90466 84235',
+                    href: 'tel:+919046684235',
           },
           {
                     icon: FiMapPin,
-                    label: 'Headquarters',
-                    value: 'Bangalore, India',
+                    label: 'Kolkata Office',
+                    value: 'O-Block, Flat No.-3, 1st Floor, C/17/9, Baishnabghata Patuli Township, Kolkata, West Bengal, 700094, India',
+                    href: '#',
+          },
+          {
+                    icon: FiMapPin,
+                    label: 'Bengaluru Office',
+                    value: 'VICI 102, SJR VERITY, Hosa Rd, KSDB Quarters Kaveri Layout, KASAVANAHALLI, Bengaluru, Karnataka 560035',
                     href: '#',
           },
 ];

@@ -4,13 +4,16 @@ export const SITE_CONFIG = {
           name: 'Kloudz Computing',
           tagline: 'We Build Products & Scale Teams',
           description: 'Transform your ideas into reality with world-class engineering talent and cutting-edge technology solutions.',
-          email: 'contact@kloudzcomputing.com',
+          email: 's.roy@kloudzcomputing.tech',
           phone: {
-                    us: '+1 (XXX) XXX-XXXX',
-                    uk: '+44 XXXX XXXXXX',
-                    india: '+91 XXXXX XXXXX',
+                    us: '+91 90466 84235',
+                    uk: '+91 90466 84235',
+                    india: '+91 90466 84235',
           },
-          address: 'Bangalore, India',
+          address: [
+                    'O-Block, Flat No.-3, 1st Floor, C/17/9, Baishnabghata Patuli Township, Kolkata, West Bengal, 700094, India',
+                    'VICI 102, SJR VERITY, Hosa Rd, KSDB Quarters Kaveri Layout, KASAVANAHALLI, Bengaluru, Karnataka 560035',
+          ],
           founded: 2014,
           social: {
                     linkedin: 'https://linkedin.com/company/kloudzcomputing',
