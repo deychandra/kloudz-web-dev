@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiCheck, FiCalendar, FiUsers, FiFileText, FiShield, FiDollarSign } from 'react-icons/fi';
+import { FiArrowRight, FiCheck, FiCalendar, FiUsers, FiFileText, FiShield } from 'react-icons/fi';
 import { pageTransition, staggerContainer, fadeUp } from '../../utils/animations';
 import SectionHeading from '../../components/ui/SectionHeading';
 import CTA from '../../components/sections/CTA';
@@ -65,11 +65,22 @@ const roles = [
           'Data Engineers & Scientists',
 ];
 
-const pricing = [
-          { level: 'Junior (1-3 years)', rate: '$20-30/hour' },
-          { level: 'Mid-Level (3-6 years)', rate: '$30-45/hour' },
-          { level: 'Senior (6-10 years)', rate: '$45-65/hour' },
-          { level: 'Lead/Architect (10+ years)', rate: '$65-85/hour' },
+const assurances = [
+          {
+                    title: 'Fast Match',
+                    description: 'Shortlist in 72 hours, onboard in 2 weeks.',
+                    icon: FiCalendar,
+          },
+          {
+                    title: 'Risk-Free Replace',
+                    description: 'Replace any hire at no additional cost.',
+                    icon: FiShield,
+          },
+          {
+                    title: 'Clear Governance',
+                    description: 'NDA, IP protection, and transparent reporting.',
+                    icon: FiFileText,
+          },
 ];
 
 const benefits = [
@@ -230,10 +241,10 @@ function ContractHiring() {
                                         </div>
                               </section>
 
-                              {/* Available Roles & Pricing */}
+                              {/* Available Roles & Assurances */}
                               <section className="section-padding bg-dark-800/30">
                                         <div className="container-wide">
-                                                  <div className="grid lg:grid-cols-2 gap-12">
+                                                  <div className="grid lg:grid-cols-2 gap-12 items-start">
                                                             {/* Roles */}
                                                             <div>
                                                                       <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
@@ -261,27 +272,34 @@ function ContractHiring() {
                                                                       </motion.div>
                                                             </div>
 
-                                                            {/* Pricing */}
+                                                            {/* Assurances */}
                                                             <div>
-                                                                      <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                                                                                <FiDollarSign className="text-primary" />
-                                                                                Hourly Rates
+                                                                      <h3 className="text-2xl font-bold text-white mb-6">
+                                                                                Engagement Assurances
                                                                       </h3>
-                                                                      <div className="glass-card p-6 mb-6">
-                                                                                {pricing.map((item, index) => (
-                                                                                          <div
-                                                                                                    key={item.level}
-                                                                                                    className={`flex justify-between py-4 ${index < pricing.length - 1 ? 'border-b border-dark-600' : ''}`}
-                                                                                          >
-                                                                                                    <span className="text-gray-300">{item.level}</span>
-                                                                                                    <span className="text-primary font-semibold">{item.rate}</span>
-                                                                                          </div>
-                                                                                ))}
+                                                                      <div className="grid gap-4">
+                                                                                {assurances.map((item) => {
+                                                                                          const Icon = item.icon;
+                                                                                          return (
+                                                                                                    <div
+                                                                                                              key={item.title}
+                                                                                                              className="glass-card p-5 flex items-start gap-4 hover:border-primary/30 transition-colors"
+                                                                                                    >
+                                                                                                              <div className="h-12 w-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
+                                                                                                                        <Icon className="h-6 w-6" />
+                                                                                                              </div>
+                                                                                                              <div>
+                                                                                                                        <h4 className="text-lg font-semibold text-white">
+                                                                                                                                  {item.title}
+                                                                                                                        </h4>
+                                                                                                                        <p className="text-sm text-gray-400">
+                                                                                                                                  {item.description}
+                                                                                                                        </p>
+                                                                                                              </div>
+                                                                                                    </div>
+                                                                                          );
+                                                                                })}
                                                                       </div>
-                                                                      <p className="text-sm text-gray-500 flex items-center gap-2">
-                                                                                <FiShield className="text-green-500" />
-                                                                                40-60% savings vs US/EU equivalent
-                                                                      </p>
                                                             </div>
                                                   </div>
                                         </div>
