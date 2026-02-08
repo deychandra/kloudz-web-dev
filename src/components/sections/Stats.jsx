@@ -1,6 +1,54 @@
-import { motion } from 'framer-motion';
+import { motion, useInView, useReducedMotion } from 'framer-motion';
 import { staggerContainer, scaleIn } from '../../utils/animations';
 import { STATS } from '../../utils/constants';
+import { useEffect, useMemo, useRef, useState } from 'react';
+
+function parseStatValue(value) {
+          const match = String(value).match(/^(\d+)(.*)$/);
+          if (!match) return { number: 0, suffix: '' };
+          return { number: Number(match[1]), suffix: match[2] || '' };
+}
+
+function AnimatedStatValue({ value, duration = 1200 }) {
+          const reduceMotion = useReducedMotion();
+          const ref = useRef(null);
+          const inView = useInView(ref, { once: true, margin: '-50px' });
+          const { number, suffix } = useMemo(() => parseStatValue(value), [value]);
+          const [display, setDisplay] = useState(reduceMotion ? number : 0);
+
+          useEffect(() => {
+                    if (!inView || reduceMotion) {
+                              if (reduceMotion) setDisplay(number);
+                              return;
+                    }
+
+                    let start = null;
+                    let rafId = null;
+
+                    const tick = (time) => {
+                              if (start === null) start = time;
+                              const progress = Math.min((time - start) / duration, 1);
+                              const current = Math.round(number * progress);
+                              setDisplay(current);
+                              if (progress < 1) {
+                                        rafId = requestAnimationFrame(tick);
+                              }
+                    };
+
+                    rafId = requestAnimationFrame(tick);
+
+                    return () => {
+                              if (rafId) cancelAnimationFrame(rafId);
+                    };
+          }, [inView, number, duration, reduceMotion]);
+
+          return (
+                    <span ref={ref}>
+                              {display}
+                              {suffix}
+                    </span>
+          );
+}
 
 /**
  * Stats Section - Trust Indicators
@@ -32,7 +80,7 @@ function Stats() {
                                                                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                                                                 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-primary mb-2 group-hover:scale-110 transition-transform duration-300"
                                                                       >
-                                                                                {stat.value}
+                                                                                <AnimatedStatValue value={stat.value} />
                                                                       </motion.div>
                                                                       <div className="text-lg font-semibold text-white mb-1">
                                                                                 {stat.label}
