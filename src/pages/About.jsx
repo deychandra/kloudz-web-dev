@@ -13,6 +13,7 @@ import CinematicHero from "../components/sections/CinematicHero";
 import Stats from "../components/sections/Stats";
 import CTA from "../components/sections/CTA";
 import SEO from "../components/common/SEO";
+import { Crown, Cpu, Rocket, Handshake } from "lucide-react";
 
 const story = [
   {
@@ -89,26 +90,30 @@ const values = [
   },
 ];
 
-const leadership = [
+const leadershipTracks = [
   {
-    name: "Rajesh Kumar",
-    role: "CEO & Founder",
-    bio: "15+ years in enterprise software",
+    role: "Founder’s Office",
+    focus: "Vision, partnerships, and long-term strategy.",
+    metrics: ["15+ global partners", "5 strategic bets", "3 new markets"],
+    icon: Crown,
   },
   {
-    name: "Priya Sharma",
-    role: "CTO",
-    bio: "Ex-Google, distributed systems expert",
+    role: "Technology Council",
+    focus: "Architecture, security, and engineering excellence.",
+    metrics: ["200+ engineers", "99.95% uptime", "50+ audits passed"],
+    icon: Cpu,
   },
   {
-    name: "Amit Patel",
-    role: "VP Engineering",
-    bio: "Built teams from 10 to 100+",
+    role: "Delivery Guild",
+    focus: "Execution, quality, and continuous improvement.",
+    metrics: ["140+ releases/yr", "92 NPS score", "48 hr onboarding"],
+    icon: Rocket,
   },
   {
-    name: "Sarah Chen",
-    role: "VP Sales",
-    bio: "Enterprise sales leader, ex-Oracle",
+    role: "Growth & Success",
+    focus: "Client success, outcomes, and expansion.",
+    metrics: ["50+ enterprise clients", "12yr avg tenure", "8x ROI wins"],
+    icon: Handshake,
   },
 ];
 
@@ -287,28 +292,77 @@ function About() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid lg:grid-cols-12 gap-8 items-stretch"
           >
-            {leadership.map((person, index) => (
-              <motion.div
-                key={person.name}
-                variants={fadeUp}
-                custom={index}
-                className="glass-card p-6 text-center"
-              >
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent-purple mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                  {person.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
-                </div>
-                <h3 className="text-lg font-semibold text-white">
-                  {person.name}
+            <motion.div
+              variants={fadeUp}
+              className="lg:col-span-5 glass-card p-8 relative overflow-hidden"
+            >
+              <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.45),transparent_60%)]" />
+              <div className="relative">
+                <p className="text-sm uppercase tracking-[0.35em] text-gray-500 mb-4">
+                  Leadership
+                </p>
+                <h3 className="text-3xl font-semibold text-white mb-4">
+                  A leadership model built on outcomes, not titles.
                 </h3>
-                <p className="text-primary text-sm mb-2">{person.role}</p>
-                <p className="text-xs text-gray-500">{person.bio}</p>
-              </motion.div>
-            ))}
+                <p className="text-sm text-gray-400 mb-6">
+                  We organize leadership around accountability pillars that
+                  drive product impact, delivery excellence, and sustained
+                  client success.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="glass-card p-4">
+                    <p className="text-xs text-gray-500">Avg. Delivery</p>
+                    <p className="text-2xl font-semibold text-white">8 weeks</p>
+                  </div>
+                  <div className="glass-card p-4">
+                    <p className="text-xs text-gray-500">Client Retention</p>
+                    <p className="text-2xl font-semibold text-white">96%</p>
+                  </div>
+                  <div className="glass-card p-4">
+                    <p className="text-xs text-gray-500">Leadership Tenure</p>
+                    <p className="text-2xl font-semibold text-white">10 yrs</p>
+                  </div>
+                  <div className="glass-card p-4">
+                    <p className="text-xs text-gray-500">Active Programs</p>
+                    <p className="text-2xl font-semibold text-white">24</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <div className="lg:col-span-7 grid md:grid-cols-2 gap-6">
+              {leadershipTracks.map((track, index) => (
+                <motion.div
+                  key={track.role}
+                  variants={fadeUp}
+                  custom={index}
+                  className="glass-card p-6 hover:border-primary/30 transition-colors"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-primary/20 via-accent-cyan/20 to-accent-purple/30 border border-white/10 flex items-center justify-center">
+                      <track.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {track.role}
+                  </h3>
+                  <p className="text-sm text-gray-400 mb-4">{track.focus}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {track.metrics.map((item) => (
+                      <span
+                        key={item}
+                        className="text-xs px-3 py-1 rounded-full bg-dark-800/70 text-gray-300 border border-white/5"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
