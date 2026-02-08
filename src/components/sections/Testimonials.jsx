@@ -296,7 +296,6 @@ function Testimonials() {
         <div className="flex items-center justify-center gap-4 mt-12">
           <NavButton direction="prev" onClick={() => paginate(-1)} />
 
-          {/* Dot indicators */}
           <div className="flex items-center gap-2 mx-4">
             {testimonials.map((_, index) => (
               <button
