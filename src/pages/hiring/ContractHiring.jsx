@@ -246,30 +246,50 @@ function ContractHiring() {
                                         <div className="container-wide">
                                                   <div className="grid lg:grid-cols-2 gap-12 items-start">
                                                             {/* Roles */}
-                                                            <div>
-                                                                      <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                                                                                <FiUsers className="text-primary" />
-                                                                                Available Roles
-                                                                      </h3>
+                                                            <div className="glass-card p-6 md:p-8">
+                                                                      <div className="flex items-center justify-between mb-8">
+                                                                                <div>
+                                                                                          <p className="text-xs uppercase tracking-[0.3em] text-gray-500 mb-2">
+                                                                                                    Roles
+                                                                                          </p>
+                                                                                          <h3 className="text-2xl font-bold text-white">
+                                                                                                    Available Roles
+                                                                                          </h3>
+                                                                                </div>
+                                                                                <div className="h-12 w-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
+                                                                                          <FiUsers className="h-6 w-6" />
+                                                                                </div>
+                                                                      </div>
                                                                       <motion.div
                                                                                 variants={staggerContainer}
                                                                                 initial="hidden"
                                                                                 whileInView="show"
                                                                                 viewport={{ once: true }}
-                                                                                className="space-y-3"
+                                                                                className="grid sm:grid-cols-2 gap-4"
                                                                       >
                                                                                 {roles.map((role, index) => (
                                                                                           <motion.div
                                                                                                     key={role}
                                                                                                     variants={fadeUp}
                                                                                                     custom={index}
-                                                                                                    className="flex items-center gap-3 p-3 rounded-lg bg-dark-700/30"
+                                                                                                    className="group rounded-xl border border-white/5 bg-dark-800/40 p-4 hover:border-primary/30 transition-colors"
                                                                                           >
-                                                                                                    <FiCheck className="text-primary flex-shrink-0" />
-                                                                                                    <span className="text-gray-300 text-sm">{role}</span>
+                                                                                                    <div className="flex items-start gap-3">
+                                                                                                              <div className="mt-1 h-6 w-6 rounded-full bg-primary/15 text-primary flex items-center justify-center">
+                                                                                                                        <FiCheck className="h-4 w-4" />
+                                                                                                              </div>
+                                                                                                              <p className="text-sm text-gray-300 leading-relaxed">
+                                                                                                                        {role}
+                                                                                                              </p>
+                                                                                                    </div>
                                                                                           </motion.div>
                                                                                 ))}
                                                                       </motion.div>
+                                                                      <div className="mt-6 flex items-center gap-3 text-xs text-gray-500">
+                                                                                <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+                                                                                Build a custom mix of skills in weeks, not months.
+                                                                                <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+                                                                      </div>
                                                             </div>
 
                                                             {/* Assurances */}
