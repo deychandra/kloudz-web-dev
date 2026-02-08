@@ -119,19 +119,14 @@ const leadershipTracks = [
 
 const offices = [
   {
-    city: "Bangalore, India",
-    type: "HQ & Engineering Center",
-    size: "150+ engineers",
+    city: "Kolkata Office",
+    address:
+      "O-Block, Flat No.-3, 1st Floor, C/17/9, Baishnabghata Patuli Township, Kolkata, West Bengal, 700094, India",
   },
   {
-    city: "Hyderabad, India",
-    type: "Development Center",
-    size: "30+ engineers",
-  },
-  {
-    city: "San Francisco, USA",
-    type: "Sales & Client Success",
-    size: "Sales team",
+    city: "Bengaluru Office",
+    address:
+      "VICI 102, SJR VERITY, Hosa Rd, KSDB Quarters Kaveri Layout, KASAVANAHALLI, Bengaluru, Karnataka 560035",
   },
 ];
 
@@ -381,7 +376,7 @@ function About() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid md:grid-cols-2 gap-6"
           >
             {offices.map((office, index) => (
               <motion.div
@@ -393,8 +388,9 @@ function About() {
                 <h3 className="text-lg font-semibold text-white mb-2">
                   {office.city}
                 </h3>
-                <p className="text-primary text-sm mb-1">{office.type}</p>
-                <p className="text-xs text-gray-500">{office.size}</p>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  {office.address}
+                </p>
               </motion.div>
             ))}
           </motion.div>
