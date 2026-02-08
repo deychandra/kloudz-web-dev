@@ -178,3 +178,42 @@ export const WHY_KLOUDZ = [
                     icon: 'handshake',
           },
 ];
+
+export const TESTIMONIALS = [
+          {
+                    id: 1,
+                    name: 'Sudipta Sengupta',
+                    title: 'Founder',
+                    company: 'The Crazy Looms',
+                    quote: 'Discovering Kloudz Computing has completely redefined how we view traditional Indian ethnic wear online. From curated Banarasi and Jamdani collections to beautifully handwoven Bengal sarees, every piece reflects heritage, craftsmanship, and timeless elegance. Their commitment to authentic artisans and cultural storytelling truly sets them apart. Kloudz Computing delivers not just solutions, but soul in every project.',
+                    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+                    logo: null,
+          },
+          {
+                    id: 2,
+                    name: 'Rajesh Kumar',
+                    title: 'CTO',
+                    company: 'FinTech Solutions',
+                    quote: 'Working with Kloudz Computing transformed our entire development process. Their team delivered a robust banking platform that handles millions of transactions daily. The attention to security and scalability exceeded our expectations. They are not just vendors but true technology partners.',
+                    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+                    logo: null,
+          },
+          {
+                    id: 3,
+                    name: 'Priya Sharma',
+                    title: 'Head of Engineering',
+                    company: 'HealthCare Plus',
+                    quote: 'Kloudz Computing helped us build a HIPAA-compliant telemedicine platform in record time. Their expertise in healthcare technology and understanding of regulatory requirements was impressive. The platform now serves over 50,000 patients monthly.',
+                    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face',
+                    logo: null,
+          },
+          {
+                    id: 4,
+                    name: 'Michael Chen',
+                    title: 'VP of Product',
+                    company: 'E-Commerce Global',
+                    quote: 'The dedicated development team from Kloudz integrated seamlessly with our in-house engineers. They brought fresh perspectives and cutting-edge solutions that accelerated our product roadmap by six months. Exceptional talent and communication.',
+                    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+                    logo: null,
+          },
+];

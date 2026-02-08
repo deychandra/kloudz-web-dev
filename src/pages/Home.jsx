@@ -9,6 +9,7 @@ import WhyUs from '../components/sections/WhyUs';
 import TechStack from '../components/sections/TechStack';
 import Process from '../components/sections/Process';
 import Stats from '../components/sections/Stats';
+import Testimonials from '../components/sections/Testimonials';
 import CTA from '../components/sections/CTA';
 
 /**
@@ -46,6 +47,9 @@ function Home() {
 
                               {/* Process Steps */}
                               <Process />
+
+                              {/* Client Testimonials */}
+                              <Testimonials />
 
                               {/* Final CTA */}
                               <CTA
