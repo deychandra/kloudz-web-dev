@@ -4,6 +4,7 @@ import { FiArrowRight, FiCheck, FiX, FiDollarSign, FiUsers, FiClock, FiAward } f
 import { pageTransition, staggerContainer, fadeUp } from '../../utils/animations';
 import SectionHeading from '../../components/ui/SectionHeading';
 import CTA from '../../components/sections/CTA';
+import SEO from '../../components/common/SEO';
 
 const teamRoles = [
           'Frontend Developers (React, Vue, Angular)',
