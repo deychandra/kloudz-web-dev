@@ -45,7 +45,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-1 col-start-1 col-end-1">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Kotlin}
@@ -58,7 +58,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-1 col-start-2 col-end-3">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Github}
@@ -71,7 +71,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-1 col-start-8 col-end-8">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Swift}
@@ -84,7 +84,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-1 col-start-9 col-end-9">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Php}
@@ -97,7 +97,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-2 col-start-1 col-end-1">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Cloud}
@@ -110,7 +110,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-2 col-start-2 col-end-2">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Azure}
@@ -123,7 +123,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-2 col-start-8 col-end-8">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Next}
@@ -136,7 +136,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-2 col-start-9 col-end-9">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Shopify}
@@ -149,7 +149,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-3 col-start-1 col-end-1">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Wordpress}
@@ -162,7 +162,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-3 col-start-2 col-end-2">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Aws}
@@ -175,7 +175,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-3 col-start-8 col-end-8">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Figma}
@@ -188,7 +188,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-3 col-start-9 col-end-9">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Python}
@@ -201,7 +201,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-4 col-start-1 col-end-1">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Angular}
@@ -214,7 +214,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-4 col-start-2 col-end-2">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Nodejs}
@@ -227,7 +227,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-4 col-start-3 col-end-3">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Go}
@@ -240,7 +240,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-4 col-start-7 col-end-7">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={SqlServer}
@@ -253,7 +253,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-4 col-start-8 col-end-8">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Sass}
@@ -266,7 +266,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-4 col-start-9 col-end-9">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Cloudflare}
@@ -279,7 +279,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-5 col-start-2 col-end-2">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={React}
@@ -292,7 +292,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-5 col-start-3 col-end-3">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Kotlin}
@@ -305,7 +305,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-5 col-start-4 col-end-4">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Dotnet}
@@ -318,7 +318,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-5 col-start-6 col-end-6">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Mongodb}
@@ -331,7 +331,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-5 col-start-7 col-end-7">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={Terraform}
@@ -344,7 +344,7 @@ function TechStack() {
           </div>
 
           <div className="row-start-5 col-start-8 col-end-8">
-            <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
+            <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
                   src={MachineLearning}
