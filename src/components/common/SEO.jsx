@@ -16,7 +16,7 @@ function SEO({
   title = 'Kloudz Computing - Global IT Services & Engineering Teams',
   description = 'Kloudz Computing helps startups and enterprises build world-class products and scale engineering teams. Software development, AI automation, and cloud DevOps services.',
   keywords = 'software development, IT services, engineering teams, AI automation, cloud DevOps, dedicated developers',
-  canonical = 'https://kloudz.com',
+  canonical = 'https://kloudzcomputing.com',
   ogImage = 'https://kloudz.com/og-image.jpg',
   ogType = 'website',
   twitterCard = 'summary_large_image',
