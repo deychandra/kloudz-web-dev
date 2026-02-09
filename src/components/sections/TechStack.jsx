@@ -35,16 +35,8 @@ function TechStack() {
       {/* Background */}
       <div className="absolute inset-0 grid-pattern opacity-20" />
       <div className="container-wide relative">
-        <div className="w-full grid grid-cols-9 gap-[14px] relative">
-          <div className="row-start-2 row-end-4 col-start-3 col-end-8">
-            <SectionHeading
-              tag="Technology"
-              title="Our Tech Stack"
-              description="We work with the latest and most powerful technologies to build scalable, maintainable solutions."
-            />
-          </div>
-
-          <div className="row-start-1 col-start-1 col-end-1">
+        <div className="w-full grid grid-cols-3 gap-[14px] relative lg:grid-cols-9">
+          <div className="lg:row-start-1 lg:col-start-1 lg:col-end-1">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -57,7 +49,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-1 col-start-2 col-end-3">
+          <div className="lg:row-start-1 lg:col-start-2 lg:col-end-3">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -70,7 +62,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-1 col-start-8 col-end-8">
+          <div className="lg:row-start-1 lg:col-start-8 lg:col-end-8">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -83,7 +75,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-1 col-start-9 col-end-9">
+          <div className="lg:row-start-1 lg:col-start-9 lg:col-end-9">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -96,7 +88,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-2 col-start-1 col-end-1">
+          <div className="lg:row-start-2 lg:col-start-1 lg:col-end-1">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -109,7 +101,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-2 col-start-2 col-end-2">
+          <div className="lg:row-start-2 lg:col-start-2 lg:col-end-2">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -122,7 +114,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-2 col-start-8 col-end-8">
+          <div className="lg:row-start-2 lg:col-start-8 lg:col-end-8">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -135,7 +127,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-2 col-start-9 col-end-9">
+          <div className="lg:row-start-2 lg:col-start-9 lg:col-end-9">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -148,7 +140,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-1 col-end-1">
+          <div className="lg:row-start-3 lg:col-start-1 lg:col-end-1">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -161,7 +153,15 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-2 col-end-2">
+          <div className="col-span-3 lg:row-start-2 lg:row-end-4 lg:col-start-3 lg:col-end-8">
+            <SectionHeading
+              tag="Technology"
+              title="Our Tech Stack"
+              description="We work with the latest and most powerful technologies to build scalable, maintainable solutions."
+            />
+          </div>
+
+          <div className="lg:row-start-3 lg:col-start-2 lg:col-end-2">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -174,7 +174,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-8 col-end-8">
+          <div className="lg:row-start-3 lg:col-start-8 lg:col-end-8">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -187,7 +187,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-3 col-start-9 col-end-9">
+          <div className="lg:row-start-3 lg:col-start-9 lg:col-end-9">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -200,7 +200,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-1 col-end-1">
+          <div className="lg:row-start-4 lg:col-start-1 lg:col-end-1">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -213,7 +213,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-2 col-end-2">
+          <div className="lg:row-start-4 lg:col-start-2 lg:col-end-2">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -226,7 +226,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-3 col-end-3">
+          <div className="lg:row-start-4 lg:col-start-3 lg:col-end-3">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -239,7 +239,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-7 col-end-7">
+          <div className="lg:row-start-4 lg:col-start-7 lg:col-end-7">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -252,7 +252,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-8 col-end-8">
+          <div className="lg:row-start-4 lg:col-start-8 lg:col-end-8">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -265,7 +265,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-4 col-start-9 col-end-9">
+          <div className="lg:row-start-4 lg:col-start-9 lg:col-end-9">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -278,7 +278,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-5 col-start-2 col-end-2">
+          <div className="lg:row-start-5 lg:col-start-2 lg:col-end-2">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -291,7 +291,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-5 col-start-3 col-end-3">
+          <div className="lg:row-start-5 lg:col-start-3 lg:col-end-3">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -304,7 +304,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-5 col-start-4 col-end-4">
+          <div className="lg:row-start-5 lg:col-start-4 lg:col-end-4">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -317,7 +317,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-5 col-start-6 col-end-6">
+          <div className="lg:row-start-5 lg:col-start-6 lg:col-end-6">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -330,7 +330,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-5 col-start-7 col-end-7">
+          <div className="lg:row-start-5 lg:col-start-7 lg:col-end-7">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
@@ -343,7 +343,7 @@ function TechStack() {
             </div>
           </div>
 
-          <div className="row-start-5 col-start-8 col-end-8">
+          <div className="lg:row-start-5 lg:col-start-8 lg:col-end-8">
             <div className=" text-center rounded-md h-[130px] lg:w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
