@@ -21,6 +21,10 @@ import Mongodb from "../../assets/images/icon/mongodb.png";
 import Terraform from "../../assets/images/icon/terraform.png";
 import OpenAi from "../../assets/images/icon/open-ai.png";
 import MachineLearning from "../../assets/images/icon/machine-learning.png";
+import Aws from "../../assets/images/icon/aws.png";
+import Python from "../../assets/images/icon/python.png";
+import Figma from "../../assets/images/icon/figma.png";
+
 
 /**
  * Technology Stack Section
@@ -161,12 +165,12 @@ function TechStack() {
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Azure}
-                  alt="Azure"
+                  src={Aws}
+                  alt="Aws"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Azure</p>
+              <p className="mt-2.5 text-sm">Aws</p>
             </div>
           </div>
 
@@ -174,12 +178,12 @@ function TechStack() {
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Next}
-                  alt="Next.js"
+                  src={Figma}
+                  alt="Figma"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Next.js</p>
+              <p className="mt-2.5 text-sm">Figma</p>
             </div>
           </div>
 
