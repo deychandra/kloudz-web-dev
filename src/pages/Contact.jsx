@@ -75,6 +75,8 @@ const faqs = [
 ];
 
 function Contact() {
+  const [errors, setErrors] = useState({});
+
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -87,18 +89,105 @@ function Contact() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    setFormState((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    setErrors((prev) => {
+      const updated = { ...prev };
+
+      if (name === "email") {
+        if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          delete updated.email;
+        }
+      } else if (value.trim()) {
+        delete updated[name];
+      }
+
+      return updated;
+    });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    // Simulate form submission
-    setTimeout(() => {
-      setIsLoading(false);
-      setIsSubmitted(true);
-    }, 1500);
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formState.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!formState.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formState.email)) {
+      newErrors.email = "Enter a valid email address";
+    }
+
+    if (!formState.inquiryType) {
+      newErrors.inquiryType = "Please select inquiry type";
+    }
+
+    if (!formState.message.trim()) {
+      newErrors.message = "Message is required";
+    } else if (formState.message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    setIsLoading(true);
+
+    const SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycbx6Gx-TlPMcXrt4L4OOUXR6cWvWjgHmn7Fz8lnAMevZgnCU4MOM3r28ToiMl1_YlawKiQ/exec";
+
+    const payload = {
+      your_name: formState.name,
+      work_email: formState.email,
+      company: formState.company,
+      inquiry_type: formState.inquiryType,
+      tell_us: formState.message,
+    };
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors", // required for Google Apps Script
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      // Success (no-cors gives no response, so assume success)
+      setIsSubmitted(true);
+      setFormState({
+        name: "",
+        email: "",
+        company: "",
+        inquiryType: "",
+        budget: "",
+        message: "",
+      });
+      setErrors({});
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+
 
   return (
     <motion.div
@@ -185,12 +274,14 @@ function Contact() {
                         <input
                           type="text"
                           name="name"
-                          required
                           value={formState.name}
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-lg bg-dark-700 border border-dark-600 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
                           placeholder="John Doe"
                         />
+                        {errors.name && (
+                          <p className="text-red-400 text-sm mt-1">{errors.name}</p>
+                        )}
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -199,12 +290,14 @@ function Contact() {
                         <input
                           type="email"
                           name="email"
-                          required
                           value={formState.email}
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-lg bg-dark-700 border border-dark-600 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
                           placeholder="john@company.com"
                         />
+                        {errors.email && (
+                          <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+                        )}
                       </div>
                     </div>
 
@@ -228,7 +321,6 @@ function Contact() {
                         </label>
                         <select
                           name="inquiryType"
-                          required
                           value={formState.inquiryType}
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-lg bg-dark-700 border border-dark-600 text-white focus:outline-none focus:border-primary transition-colors"
@@ -240,6 +332,9 @@ function Contact() {
                             </option>
                           ))}
                         </select>
+                        {errors.inquiryType && (
+                          <p className="text-red-400 text-sm mt-1">{errors.inquiryType}</p>
+                        )}
                       </div>
                     </div>
 
@@ -250,13 +345,15 @@ function Contact() {
                       </label>
                       <textarea
                         name="message"
-                        required
                         rows={5}
                         value={formState.message}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg bg-dark-700 border border-dark-600 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors resize-none"
                         placeholder="Brief description of your project or hiring needs..."
                       />
+                      {errors.message && (
+                        <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+                      )}
                     </div>
 
                     <motion.button
