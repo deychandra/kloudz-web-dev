@@ -13,13 +13,13 @@ import Nodejs from "../../assets/images/icon/nodejs.png";
 import Go from "../../assets/images/icon/go.png";
 import SqlServer from "../../assets/images/icon/sqlserver.png";
 import Sass from "../../assets/images/icon/sass.png";
-import Gatsby from "../../assets/images/icon/gatsby.png";
+import Cloudflare from "../../assets/images/icon/cloudflare.png";
 import React from "../../assets/images/icon/react.png";
 import Dotnet from "../../assets/images/icon/dotnet.png";
 import Mongodb from "../../assets/images/icon/mongodb.png";
 
 import Terraform from "../../assets/images/icon/terraform.png";
-import OpenAi from "../../assets/images/icon/open-ai.png";
+import Wordpress from "../../assets/images/icon/wordprees.png";
 import MachineLearning from "../../assets/images/icon/machine-learning.png";
 import Aws from "../../assets/images/icon/aws.png";
 import Python from "../../assets/images/icon/python.png";
@@ -152,12 +152,12 @@ function TechStack() {
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={OpenAi}
-                  alt="OpenAI"
+                  src={Wordpress}
+                  alt="Wordpress"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Open AI</p>
+              <p className="mt-2.5 text-sm">Wordpress</p>
             </div>
           </div>
 
@@ -191,12 +191,12 @@ function TechStack() {
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Shopify}
-                  alt="Shopify"
+                  src={Python}
+                  alt="Python"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Shopify</p>
+              <p className="mt-2.5 text-sm">Python</p>
             </div>
           </div>
 
@@ -269,12 +269,12 @@ function TechStack() {
             <div className=" text-center rounded-md h-[130px] w-[130px] flex flex-col justify-center items-center transition-all duration-200">
               <div className="h-[50px] w-[80px]">
                 <img
-                  src={Gatsby}
-                  alt="Gatsby"
+                  src={Cloudflare}
+                  alt="Cloudflare"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="mt-2.5 text-sm">Gatsby</p>
+              <p className="mt-2.5 text-sm">Cloudflare</p>
             </div>
           </div>
 
